@@ -3,7 +3,7 @@
 <br>
 </p>
 <div align="center">
-<h1>Taser Drone/h1>
+<h1>Taser Drone</h1>
 <h3>Official GitHub Repo</h5>
 <img src='https://img.shields.io/badge/Taser-Yes-green'></img>
 <img src='https://img.shields.io/badge/Build-Tasable-yellow'></img>
