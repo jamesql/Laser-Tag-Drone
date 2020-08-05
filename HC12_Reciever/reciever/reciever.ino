@@ -4,13 +4,13 @@ SoftwareSerial HC12(11,12);
 
 void setup()
 {
-	 Serial.begin(9600);
+   Serial.begin(9600);
    HC12.begin(9600);
 }
 
 void loop()
 {
-	while (HC12.available()) {
+  while (HC12.available()) {
     Serial.write(HC12.read());
   }
   while (Serial.available()) {
