@@ -1,15 +1,28 @@
 #include <SoftwareSerial.h>
 
 SoftwareSerial HC12(11,12);
+int ButtonPin = 13;
+
+int sequence = 0;
+int seqMax = 500;
 
 void setup()
 {
-   Serial.begin(9600);
    HC12.begin(9600);
+   pinMode(ButtonPin, INPUT);
 }
 
 void loop()
 {
-  HC12.write("Test");
-  delay(1000);
+  if (isGateOpened() || sequence > seqMax)
+  {
+    HC12.write("TAZE");
+    sequence = 0;
+  }
+  sequence++;
+}
+
+bool isGateOpened()
+{
+  
 }
