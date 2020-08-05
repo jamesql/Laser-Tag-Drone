@@ -1,6 +1,7 @@
 #include <SoftwareSerial.h>
 
 SoftwareSerial HC12(11,12);
+int ir_time = 1000;
 
 void setup()
 {
@@ -10,10 +11,23 @@ void setup()
 
 void loop()
 {
-  while (HC12.available()) {
-    Serial.write(HC12.read());
-  }
-  while (Serial.available()) {
-    HC12.write(Serial.read());
-  }
+  if (HC12.available())
+    AttemptTase();   
+}
+
+void AttemptTase()
+{
+  enable_ir();
+  delay(ir_time);
+  disable_ir();
+}
+
+void enable_ir()
+{
+  
+}
+
+void disable_ir()
+{
+  
 }
