@@ -4,7 +4,8 @@
             "name": "Linux",
             "includePath": [
                 "/home/james/Desktop/arduino/tools/**",
-                "/home/james/Desktop/arduino/hardware/arduino/avr/**"
+                "/home/james/Desktop/arduino/hardware/arduino/avr/**",
+                "/home/james/Desktop/arduino/libraries/**"
             ],
             "forcedInclude": [
                 "/home/james/Desktop/arduino/hardware/arduino/avr/cores/arduino/Arduino.h"
