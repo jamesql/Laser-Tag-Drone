@@ -16,7 +16,7 @@ void loop()
 {
   if (isGateOpened() || sequence > seqMax)
   {
-    HC12.write("TAZE");
+    HC12.write("Go Fuck Yourself\n");
     sequence = 0;
   }
   sequence++;
