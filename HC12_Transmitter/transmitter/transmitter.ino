@@ -2,6 +2,8 @@
 
 /* HC12 Object. */
 SoftwareSerial HC12(11,12);
+
+/* Pin Numbers */
 int ButtonPin = 13;
 
 /* Sequencing Variabels (kinda like aim assist). */
@@ -32,12 +34,6 @@ void loop()
 
 /* Check if button is pressed down. */
 bool isGateOpened()
-{
-  
-}
-
-/* send 38khz raw ir signal. */
-void sendIr()
 {
   
 }

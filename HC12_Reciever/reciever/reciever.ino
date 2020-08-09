@@ -3,6 +3,8 @@
 SoftwareSerial HC12(11,12);
 int ir_time = 1000;
 
+int IRPin = 10;
+
 void setup()
 {
    Serial.begin(9600);
@@ -22,12 +24,8 @@ void AttemptTase()
   disable_ir();
 }
 
-void enable_ir()
-{
-  
-}
-
-void disable_ir()
+/* send 38khz raw ir signal. */
+void sendIr()
 {
   
 }
