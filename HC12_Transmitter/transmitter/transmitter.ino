@@ -35,3 +35,9 @@ bool isGateOpened()
 {
   
 }
+
+/* send 38khz raw ir signal. */
+void sendIr()
+{
+  
+}
