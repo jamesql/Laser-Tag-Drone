@@ -3,7 +3,7 @@
 // Pin that controlls both channels relay circuits
 #define relay_pin 4
 
-int rec_arry[] = {2};
+int rec_arry[] = {2,5,6,7};
 const int rec_arry_length = sizeof(rec_arry);
 
 IRrecv ir_arry[] = {NULL};
